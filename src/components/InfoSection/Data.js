@@ -1,3 +1,7 @@
+import aboutPic from '../../images/svg-about.svg';
+import resumePic from '../../images/svg-resume.svg';
+import contactPic from '../../images/svg-contact.svg';
+
 export const homeObjOne = {
   id: 'about',
   lightBg: false,
@@ -8,7 +12,7 @@ export const homeObjOne = {
   description: "Junior studying at The Master's University",
   buttonLabel: 'Contact Me',
   imgStart: false, //Toggle for image to switch sides
-  img: require('../../images/svg-about.svg'),
+  img: aboutPic,
   alt: 'about-pic',
   dark: true,
   primary: true,
@@ -24,7 +28,7 @@ export const homeObjThree = {
   description: "Click the button below to view my Resume",
   buttonLabel: 'View Resume',
   imgStart: false, //Toggle for image to switch sides
-  img: require('../../images/svg-resume.svg'),
+  img: resumePic,
   alt: 'resume-pic',
   dark: true,
   primary: true,
@@ -40,7 +44,7 @@ export const homeObjFour = {
   description: "Click the button below to contact me by email",
   buttonLabel: 'Contact Me',
   imgStart: false, //Toggle for image to switch sides
-  img: require('../../images/svg-contact.svg'),
+  img: contactPic,
   alt: 'contact-pic',
   dark: false,
   primary: false,

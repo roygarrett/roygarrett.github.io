@@ -79,7 +79,6 @@ export const Subtitle = styled.p`
   line-height: 24px;
   font-weight: ${({lightText}) => (lightText ? '300' : '700')};
   color: ${({lightText}) => (lightText ? '#f7f8f8' : '#010606')};
-  //try darkText later
 `;
 
 export const BtnWrap = styled.div`
