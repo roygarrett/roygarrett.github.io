@@ -11,14 +11,14 @@ const HeroSection = () => {
   }
 
   return (
-    <HeroContainer>
+    <HeroContainer id='home'>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
         <HeroH1>Welcome to my Portfolio</HeroH1>
         <HeroP>
-          Click the tabs above to learn more about me
+          Click the tabs above to learn more
         </HeroP>
         <HeroBtnWrapper>
           <Button

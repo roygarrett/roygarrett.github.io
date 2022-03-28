@@ -24,7 +24,7 @@ const Sidebar = ({isOpen, toggle}) => {
           <SidebarLink to='contact' onClick={toggle}>Contact</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/contact-me'>Contact Here!</SidebarRoute>
+          <SidebarRoute to='/contact'>Contact Here!</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

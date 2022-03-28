@@ -1,5 +1,6 @@
 import React from 'react'
-import {Button} from '../ButtonElements';
+import {ButtonPage} from '../ButtonPageElements';
+import Pdf from '../../../src/Resume2022.pdf';
 import {
   InfoContainer,
   InfoWrapper,
@@ -13,9 +14,9 @@ import {
   BtnWrap,
   Img,
   ImgWrap
-} from './InfoElements';
+} from './ContactElements';
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const ContactSection = ({lightBg, id, imgStart, topLine, lightText, headLine, description, buttonLabel, img, alt, primary, dark, dark2}) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -27,7 +28,8 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, descr
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle lightText={lightText}/*try dark text later*/>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to='home'
+                  <ButtonPage 
+                    to='/contact'
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -36,7 +38,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, descr
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                  >{buttonLabel}</Button>
+                  >{buttonLabel}</ButtonPage>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
@@ -52,4 +54,4 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, descr
   );
 };
 
-export default InfoSection;
+export default ContactSection;

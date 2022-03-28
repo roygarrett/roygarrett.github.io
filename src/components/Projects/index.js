@@ -1,7 +1,5 @@
 import React from 'react';
 import Icon1 from '../../images/svg-react.svg';
-import Icon2 from '../../images/svg-react.svg';
-import Icon3 from '../../images/svg-react.svg';
 import { ProjectsContainer, ProjectsWrapper, ProjectCard, ProjectIcon, ProjectsH1, ProjectsH2, ProjectsP } from './ProjectsElements';
 
 const Projects = () => {
@@ -11,16 +9,16 @@ const Projects = () => {
       <ProjectsWrapper>
         <ProjectCard>
           <ProjectIcon src={Icon1}/>
-          <ProjectsH2>This Website</ProjectsH2>
+          <ProjectsH2>./Roy-Garrett</ProjectsH2>
           <ProjectsP>This website is built with React!</ProjectsP>
         </ProjectCard>
-        <ProjectCard>
-          <ProjectIcon src={Icon2}/>
+        <ProjectCard href='https://reacttictactoee.herokuapp.com' target='_blank'>
+          <ProjectIcon src={Icon1}/>
           <ProjectsH2>TicTacToe Game</ProjectsH2>
           <ProjectsP>Simple TicTacToe game built with React.</ProjectsP>
         </ProjectCard>
-        <ProjectCard>
-          <ProjectIcon src={Icon3}/>
+        <ProjectCard href='https://reacttodolistt.herokuapp.com' target='_blank'>
+          <ProjectIcon src={Icon1}/>
           <ProjectsH2>To-Do List</ProjectsH2>
           <ProjectsP>Simple to-do list built with React.</ProjectsP>
         </ProjectCard>

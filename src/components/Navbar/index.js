@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
 import {
   Nav,
   NavbarContainer,
@@ -14,9 +15,24 @@ import {
 
 
 const Navbar = ({toggle}) => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 80) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+
   return (
     <>
-      <Nav>
+    <IconContext.Provider value={{color: '#fff'}}>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to='/'>./Roy-Garrett</NavLogo>
           <MobileIcon onClick={toggle}>
@@ -33,14 +49,15 @@ const Navbar = ({toggle}) => {
               <NavLinks to='resume'>Resume</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='contact'>Contact Me</NavLinks>
+              <NavLinks to='contact'>Contact</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/contact-me'>Contact Here!</NavBtnLink>
+            <NavBtnLink to='/contact'>Reach Out</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
+    </IconContext.Provider>
     </>
   );
 };

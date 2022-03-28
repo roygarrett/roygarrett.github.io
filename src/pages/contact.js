@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import PageContact from '../components/PageContact';
 
 const contact = () => {
   return (
-    <div>
-      <h1>Contact Me</h1>
-    </div>
+    <>
+      <PageContact />
+    </>
   );
 };
 

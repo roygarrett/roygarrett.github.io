@@ -36,12 +36,13 @@ export const ProjectsWrapper = styled.div`
   }
 `;
 
-export const ProjectCard = styled.div`
+export const ProjectCard = styled.a`
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
   border-radius: 10px;
   max-height: 340px;
   padding: 30px;
@@ -73,10 +74,14 @@ export const ProjectsH1 = styled.h1`
 
 export const ProjectsH2 = styled.h2`
   font-size: 1rem;
+  text-decoration: none;
+  color: #010606;
   margin-bottom: 10px;
 `;
 
 export const ProjectsP = styled.p`
   font-size: 1rem;
+  text-decoration: none;
+  color: #010606;
   text-align: center;
 `;

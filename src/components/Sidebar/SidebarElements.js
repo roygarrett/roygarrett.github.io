@@ -68,7 +68,8 @@ export const SidebarLink = styled(LinkS)`
 
 export const SideBtnWrap = styled.div`
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  font-weight: 700;
 `;
 
 export const SidebarRoute = styled(LinkR)`
