@@ -1,7 +1,13 @@
 import React, {useState, useRef} from 'react';
-import emailjs from '@emailjs/browser';
+import{ init } from '@emailjs/browser';
 import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon, Text } from './PageContactElements';
+init("2zLssl-mVDmHSk3Xc");
 
+const Result = () => {
+  return(
+    'Your message has been sent. Thank you!' 
+  );
+};
 
 const PageContact = () => {
   const [result, showResult] = useState(false);
@@ -10,7 +16,7 @@ const PageContact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
   
-    emailjs.sendForm('service_./Roy-Garrett', 'template_xzqt099', form.current, '2zLssl-mVDmHSk3Xc')
+    init.sendForm('service_./Roy-Garrett', 'template1', form.current, '2zLssl-mVDmHSk3Xc')
         .then((result) => {
             console.log(result.text);
         }, 
@@ -37,7 +43,7 @@ const PageContact = () => {
               <FormLabel htmlFor='for'>Content</FormLabel>
               <FormInput type='text' name='message' required />
               <FormButton type='submit'>Submit</FormButton>
-              <Text>Result Text Here</Text>
+              <Text>{result ? <Result /> : null}</Text>
             </Form>
           </FormContent>
         </FormWrap>

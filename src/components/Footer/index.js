@@ -1,6 +1,5 @@
 import React from 'react';
 import Pdf from '../../../src/Resume2022.pdf';
-import {animateScroll as scroll} from 'react-scroll';
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLink, A, FooterScroll} from './FooterElements';
 
 const Footer = () => {

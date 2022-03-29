@@ -23,6 +23,11 @@ const HeroSection = () => {
         <HeroBtnWrapper>
           <Button
             to='contact'
+            smooth={true} 
+            duration={500} 
+            spy={true}
+            exact='true' 
+            offset={-80}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
