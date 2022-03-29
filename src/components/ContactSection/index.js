@@ -1,6 +1,5 @@
 import React from 'react'
 import {ButtonPage} from '../ButtonPageElements';
-import Pdf from '../../../src/Resume2022.pdf';
 import {
   InfoContainer,
   InfoWrapper,

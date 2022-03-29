@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import {animateScroll as scroll} from 'react-scroll';
 import {
   Nav,
   NavbarContainer,
@@ -29,27 +30,59 @@ const Navbar = ({toggle}) => {
     window.addEventListener('scroll', changeNav)
   }, [])
 
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
+
   return (
     <>
     <IconContext.Provider value={{color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/'>./Roy-Garrett</NavLogo>
+          <NavLogo to='/' onClick={toggleHome}>./Roy-Garrett</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about'>About</NavLinks>
+              <NavLinks 
+              to='about'
+              smooth={true} 
+              duration={500} 
+              spy={true}
+              exact='true' 
+              offset={-80}
+              >About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='projects'>Projects</NavLinks>
+              <NavLinks 
+              to='projects'
+              smooth={true} 
+              duration={500} 
+              spy={true}
+              exact='true' 
+              offset={-80}
+              >Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='resume'>Resume</NavLinks>
+              <NavLinks 
+              to='resume'
+              smooth={true} 
+              duration={500} 
+              spy={true}
+              exact='true' 
+              offset={-80}
+              >Resume</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='contact'>Contact</NavLinks>
+              <NavLinks 
+              to='contact'
+              smooth={true} 
+              duration={500} 
+              spy={true}
+              exact='true' 
+              offset={-80}
+              >Contact</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

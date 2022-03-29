@@ -113,3 +113,15 @@ export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
 `;
+
+export const SocialLogo = styled(LinkS)`
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+`;

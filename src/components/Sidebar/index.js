@@ -18,13 +18,45 @@ const Sidebar = ({isOpen, toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-          <SidebarLink to='projects' onClick={toggle}>Projects</SidebarLink>
-          <SidebarLink to='resume' onClick={toggle}>Resume</SidebarLink>
-          <SidebarLink to='contact' onClick={toggle}>Contact</SidebarLink>
+          <SidebarLink 
+            to='about'
+            onClick={toggle}
+            smooth={true} 
+            duration={500} 
+            spy={true}
+            exact='true' 
+            offset={-80}
+          >About</SidebarLink>
+          <SidebarLink 
+            to='projects'
+            onClick={toggle}
+            smooth={true} 
+            duration={500} 
+            spy={true}
+            exact='true' 
+            offset={-80}
+          >Projects</SidebarLink>
+          <SidebarLink 
+            to='resume'
+            onClick={toggle}
+            smooth={true} 
+            duration={500} 
+            spy={true}
+            exact='true' 
+            offset={-80}
+          >Resume</SidebarLink>
+          <SidebarLink
+            to='contact'
+            onClick={toggle}
+            smooth={true} 
+            duration={500} 
+            spy={true}
+            exact='true' 
+            offset={-80}
+          >Contact</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/contact'>Contact Here!</SidebarRoute>
+          <SidebarRoute to='/contact'>Reach Out</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

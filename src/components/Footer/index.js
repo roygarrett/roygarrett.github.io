@@ -1,18 +1,34 @@
 import React from 'react';
 import Pdf from '../../../src/Resume2022.pdf';
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLink, A, SocialMedia, SocialMediaWrap, FooterScroll } from './FooterElements';
+import {animateScroll as scroll} from 'react-scroll';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLink, A, FooterScroll} from './FooterElements';
 
 const Footer = () => {
+  
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-                <FooterScroll to='about'>About</FooterScroll>
+                <FooterScroll
+                to='about'
+                smooth={true} 
+                duration={500} 
+                spy={true}
+                exact='true' 
+                offset={-80}
+                >About</FooterScroll>
             </FooterLinkItems>
             <FooterLinkItems>
-                <FooterScroll to='projects'>Projects</FooterScroll>
+                <FooterScroll
+                to='projects'
+                smooth={true} 
+                duration={500} 
+                spy={true}
+                exact='true' 
+                offset={-80}
+                >Projects</FooterScroll>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
@@ -24,9 +40,6 @@ const Footer = () => {
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
-        <SocialMedia>
-          <SocialMediaWrap />
-        </SocialMedia>
       </FooterWrap>
     </FooterContainer>
   );
