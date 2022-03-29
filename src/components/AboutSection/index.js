@@ -1,5 +1,4 @@
-import React from 'react'
-import {Button} from '../ButtonElements';
+import React from 'react';
 import {
   InfoContainer,
   InfoWrapper,
@@ -10,12 +9,11 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   Img,
   ImgWrap
 } from './AboutElements';
 
-const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headLine, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headLine, description, img, alt}) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -25,7 +23,7 @@ const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headLine, desc
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
-                <Subtitle lightText={lightText}/*try dark text later*/>{description}</Subtitle>
+                <Subtitle lightText={lightText}>{description}</Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>

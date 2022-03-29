@@ -1,10 +1,10 @@
 import React from 'react';
-import PageContact from '../components/PageContact';
+import ConstructionPage from '../components/ConstructionPage';
 
 const contact = () => {
   return (
     <>
-      <PageContact />
+      <ConstructionPage />
     </>
   );
 };
