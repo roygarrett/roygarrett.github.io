@@ -7,7 +7,7 @@ export const Contact = {
   lightTextDesc: true,
   topLine: 'Contact',
   headLine: 'Contact Me',
-  description: "Send an email below",
+  description: "Send an E-mail Below",
   buttonLabel: 'Reach Out',
   imgStart: false, //Toggle for image to switch sides
   img: contactPic,

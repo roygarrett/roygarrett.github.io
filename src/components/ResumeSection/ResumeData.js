@@ -7,7 +7,7 @@ export const Resume = {
   lightTextDesc: false,
   topLine: 'Resume',
   headLine: 'View My Resume',
-  buttonLabel: 'View Resume',
+  buttonLabel: 'Take a Look',
   imgStart: true, //Toggle for image to switch sides
   img: resumePic,
   alt: 'resume-pic',

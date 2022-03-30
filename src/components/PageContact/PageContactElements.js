@@ -107,3 +107,22 @@ export const Text = styled.span`
   color: #fff;
   font-size: 14px;
 `;
+
+export const FormMessageArea = styled.textarea`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  max-width: 336px;
+  border-radius: 4px;
+  
+`;
+
+export const FormSubmitInput = styled.input`
+  background: #01bf71;
+  padding: 16px 0;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+`;

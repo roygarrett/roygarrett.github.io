@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Video from '../../videos/video.mp4';
-import {Button} from '../ButtonElements';
+import {ButtonPage} from '../ButtonPageElements';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
 
 const HeroSection = () => {
@@ -18,10 +18,10 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Welcome to my Portfolio</HeroH1>
         <HeroP>
-          Click the tabs above to learn more
+          Scroll to Learn More
         </HeroP>
         <HeroBtnWrapper>
-          <Button
+          <ButtonPage
             to='contact'
             smooth={true} 
             duration={500} 
@@ -34,7 +34,7 @@ const HeroSection = () => {
             dark='true'
           >
             Contact Me {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonPage>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
