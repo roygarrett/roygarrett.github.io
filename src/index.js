@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-require('newrelic');
 const CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
 
 ReactDOM.render(
