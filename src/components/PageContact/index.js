@@ -32,7 +32,7 @@ const PageContact = () => {
           <Icon to='/'>./Roy-Garrett</Icon>
           <FormContent>
             <Form ref={form} onSubmit={sendEmail}>
-              <FormH1>Submit email contents below!</FormH1>
+              <FormH1>Submit E-mail below!</FormH1>
               <FormLabel>Name</FormLabel>
               <FormInput type='text' name='from_name' required />
               <FormLabel>Email</FormLabel>
