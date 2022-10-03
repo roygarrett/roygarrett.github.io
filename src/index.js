@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

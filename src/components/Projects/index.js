@@ -1,30 +1,57 @@
 import React from 'react';
-import Icon1 from '../../images/svg-react.svg';
-import { ProjectsContainer, ProjectsWrapper, ProjectCard, ProjectIcon, ProjectsH1, ProjectsH2, ProjectsP } from './ProjectsElements';
+import {ButtonLink} from '../ButtonLinkElements';
+import {
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  Column2,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  BtnWrap,
+  Img,
+  ImgWrap
+} from './ProjectsElements';
 
-const Projects = () => {
+const ProjectsSection = ({lightBg, id, imgStart, topLine, lightText, headLine, description, buttonLabel, img, alt, primary, dark, dark2}) => {
   return (
-    <ProjectsContainer id='projects'>
-      <ProjectsH1>My Projects</ProjectsH1>
-      <ProjectsWrapper>
-        <ProjectCard>
-          <ProjectIcon src={Icon1}/>
-          <ProjectsH2>./Roy-Garrett</ProjectsH2>
-          <ProjectsP>This website is built with React!</ProjectsP>
-        </ProjectCard>
-        <ProjectCard href='https://roygarrett.github.io/react-tictactoe/' target='_blank'>
-          <ProjectIcon src={Icon1}/>
-          <ProjectsH2>TicTacToe Game</ProjectsH2>
-          <ProjectsP>Simple TicTacToe game built with React.</ProjectsP>
-        </ProjectCard>
-        <ProjectCard href='https://roygarrett.github.io/react-todolist/' target='_blank'>
-          <ProjectIcon src={Icon1}/>
-          <ProjectsH2>To-Do List</ProjectsH2>
-          <ProjectsP>Simple to-do list built with React.</ProjectsP>
-        </ProjectCard>
-      </ProjectsWrapper>
-    </ProjectsContainer>
+    <>
+      <InfoContainer lightBg={lightBg} id={id}>
+        <InfoWrapper>
+          <InfoRow imgStart={imgStart}>
+            <Column1>
+              <TextWrapper>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <Subtitle lightText={lightText}/*try dark text later*/>{description}</Subtitle>
+                <BtnWrap>
+                  <ButtonLink
+                    href='https://github.com/roygarrett'
+                    target='_blank'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >{buttonLabel}</ButtonLink>
+                </BtnWrap>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img src={img} alt={alt} />
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+    </>
   );
 };
 
-export default Projects;
+export default ProjectsSection;

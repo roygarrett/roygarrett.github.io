@@ -5,7 +5,8 @@ import HeroSection from '../components/HeroSection';
 import {About} from '../components/AboutSection/AboutData';
 import {Resume} from '../components/ResumeSection/ResumeData';
 import {Contact} from '../components/ContactSection/ContactData';
-import Projects from '../components/Projects';
+import {Projects} from '../components/Projects/ProjectData';
+import ProjectsSection from '../components/Projects';
 import AboutSection from '../components/AboutSection';
 import ResumeSection from '../components/ResumeSection';
 import ContactSection from '../components/ContactSection';
@@ -25,7 +26,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <AboutSection {...About}/>
-      <Projects />
+      <ProjectsSection {...Projects}/>
       <ResumeSection {...Resume}/>
       <ContactSection {...Contact}/>
       <Footer />
