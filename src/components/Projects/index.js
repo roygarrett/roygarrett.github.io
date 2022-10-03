@@ -12,12 +12,12 @@ const Projects = () => {
           <ProjectsH2>./Roy-Garrett</ProjectsH2>
           <ProjectsP>This website is built with React!</ProjectsP>
         </ProjectCard>
-        <ProjectCard href='https://roygarrett.github.io/react-tictactoe/' target='_blank'>
+        <ProjectCard href='https://roygarrett.github.io/react-todolist/' target='_blank'>
           <ProjectIcon src={Icon1}/>
           <ProjectsH2>TicTacToe Game</ProjectsH2>
           <ProjectsP>Simple TicTacToe game built with React.</ProjectsP>
         </ProjectCard>
-        <ProjectCard href='https://roygarrett.github.io/react-todolist/' target='_blank'>
+        <ProjectCard href='https://roygarrett.github.io/react-tictactoe/' target='_blank'>
           <ProjectIcon src={Icon1}/>
           <ProjectsH2>To-Do List</ProjectsH2>
           <ProjectsP>Simple to-do list built with React.</ProjectsP>
