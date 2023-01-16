@@ -1,6 +1,6 @@
 import React from 'react'
 import {ButtonLink} from '../ButtonLinkElements';
-import Pdf from '../../Resume2022.pdf'
+import Pdf from '../../Resume2023.pdf'
 import {
   InfoContainer,
   InfoWrapper,
