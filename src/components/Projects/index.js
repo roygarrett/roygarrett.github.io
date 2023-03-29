@@ -28,7 +28,7 @@ const ProjectsSection = ({lightBg, id, imgStart, topLine, lightText, headLine, d
                 <Subtitle lightText={lightText}/*try dark text later*/>{description}</Subtitle>
                 <BtnWrap>
                   <ButtonLink
-                    href='https://github.com/roygarrett?tab=repositories'
+                    href='https://github.com/roygarrett'
                     target='_blank'
                     smooth={true}
                     duration={500}
